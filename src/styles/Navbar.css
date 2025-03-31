@@ -1,23 +1,19 @@
-/* Define CSS variables for light mode */
 :root {
     --bg-color: #ffffff;
     --text-color: #111111;
   }
   
-  /* When dark mode is enabled */
   body.dark {
     --bg-color: #111111;
     --text-color: #ffffff;
   }
   
-  /* Apply background and text color to body */
   body {
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  /* Navbar container */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -27,13 +23,11 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Logo styles */
   .logo {
     font-size: 24px;
     font-weight: bold;
   }
   
-  /* Navigation links */
   .nav-links a {
     margin: 0 15px;
     text-decoration: none;
@@ -41,7 +35,6 @@
     font-size: 18px;
   }
   
-  /* Toggle button */
   .toggle-btn {
     background: transparent;
     border: none;

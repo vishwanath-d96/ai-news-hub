@@ -14,7 +14,6 @@ const Navbar = () => {
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
-  // Listen for auth state changes
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);

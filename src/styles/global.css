@@ -1,13 +1,10 @@
-/* src/styles/index.css */
 
-/* Reset default browser styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Set up CSS variables for light mode */
   :root {
     --bg-color: #ffffff;
     --text-color: #111111;
@@ -16,7 +13,6 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
   }
   
-  /* Dark mode variables */
   body.dark {
     --bg-color: #111111;
     --text-color: #ffffff;
@@ -25,7 +21,6 @@
     --shadow-color: rgba(255, 255, 255, 0.1);
   }
   
-  /* Base body styling */
   body {
     font-family: Arial, sans-serif;
     background-color: var(--bg-color);
@@ -34,7 +29,6 @@
     line-height: 1.6;
   }
   
-  /* Global link styling */
   a {
     color: var(--primary-color);
     text-decoration: none;
@@ -44,19 +38,16 @@
     text-decoration: underline;
   }
   
-  /* Utility container class */
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
   
-  /* Headings styling */
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
   }
   
-  /* Paragraph styling */
   p {
     margin-bottom: 15px;
   }

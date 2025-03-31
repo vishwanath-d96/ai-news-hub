@@ -9,18 +9,14 @@ const NewsList = () => {
   const { news, loading, fetchNews, loadMoreNews } = useNewsStore();
   const { addBookmark, bookmarks } = useBookmarkStore();
 
-  // For filtering and sorting
   const [category, setCategory] = useState(
     localStorage.getItem("preferredCategory") || ""
   );
   const [sortOrder, setSortOrder] = useState("publishedAt");
 
-  // Fetch news when component mounts or when filter changes
   useEffect(() => {
-    // Save preference for personalization
     localStorage.setItem("preferredCategory", category);
     fetchNews("", 1, category, sortOrder);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category, sortOrder]);
 
   const handleSearch = (query) => {

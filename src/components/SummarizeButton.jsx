@@ -13,7 +13,7 @@ const SummarizeButton = ({ articleText }) => {
         { text: articleText },
         {
           headers: {
-            "Api-Key": "747a9e76-2a3a-4617-a427-6f8d41f7547d" // Replace with your DeepAI API key
+            "Api-Key": "747a9e76-2a3a-4617-a427-6f8d41f7547d"
           },
         }
       );
