@@ -1,0 +1,81 @@
+/* src/styles/index.css */
+
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set up CSS variables for light mode */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --primary-color: #0077ff;
+    --secondary-color: #005bb5;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dark mode variables */
+  body.dark {
+    --bg-color: #111111;
+    --text-color: #ffffff;
+    --primary-color: #0077ff;
+    --secondary-color: #005bb5;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Base body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+  }
+  
+  /* Global link styling */
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Utility container class */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Headings styling */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph styling */
+  p {
+    margin-bottom: 15px;
+  }
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: var(--secondary-color);
+  }
+  

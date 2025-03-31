@@ -1,0 +1,58 @@
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-card {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.news-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.news-card p {
+  font-size: 14px;
+  color: gray;
+}
+
+.news-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+/* Existing styles for news-container, news-card, load-more, etc. */
+
+.filter-sort {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.filter-sort select,
+.filter-sort label {
+  font-size: 16px;
+}
+
+.filter-sort div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
